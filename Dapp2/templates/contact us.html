@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    li{
+            display: inline;
+            margin: 10px;
+            
+        }
+    hr{
+           height: 5px;
+           border: 2px solid brown;
+           border-radius: 10px;
+           background: linear-gradient(to left,red,blue);
+           margin-top: 100px;
+           
+
+
+        }
+    ul{
+            margin-left: 1200px;
+            font-size: 40px;
+            margin-top: -70px;
+            
+        }
+     a{
+            color: chocolate;
+            text-decoration: none;
+     }
+     .div1{
+         height: 1000px;
+         width: 1000px;
+         background-color:white;
+         margin-left:700px ;
+     }
+     .h1{
+         font-size: 80px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .p1{
+         font-size: 50px;
+         padding-top: 40px;
+
+     }
+        
+
+    </style>
+</head>
+<body>
+    <img style="height: 100px; width: 100px;" src="{% static 'image/msi.png' %}">
+    
+    <div > 
+        
+        <ul>
+        
+    
+    <li class="li1" ><a href="home">home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="products">products</a></li>
+            <li><a href="services">services</a></li>
+            <li><a href="contact us">contact us</a></li>
+            <li><a href="login">login</a></li>
+        </ul>
+        </div>
+        <hr> <br>
+    <div class="div1">
+    <h class="h1">MSI HEAD OFFICE
+     </h><BR>
+        <div>
+       <p class="p1"> No. 69, Lide St., Zhonghe Dist., New Taipei City 235, Taiwan<br>
+        Tel: +886-2-3234-5599 #1356<br>
+        Email:acs@msi.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7781589857555!2d121.48523531533081!3d25.007652983984702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a82c71531cc7%3A0x6173619febf53ed9!2sMicro-Star%20International%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sin!4v1625996059671!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+    </div>
+
+
+   
+</body>
+</html>

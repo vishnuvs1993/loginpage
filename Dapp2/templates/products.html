@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+            margin: 10px;
+            
+        }
+        hr{
+           height: 5px;
+           border: 2px solid brown;
+           border-radius: 10px;
+           background: linear-gradient(to left,red,blue);
+           margin-top: 100px;
+           
+
+
+        }
+        ul{
+            margin-left: 1200px;
+            font-size: 40px;
+            margin-top: -70px;
+            
+        }
+        a{
+            color: chocolate;
+            text-decoration: none;
+            
+        
+           
+        
+            
+        }
+        img{
+            height: 200px;
+            width: 200px
+        }
+        .h1{
+            text-align: center;
+            color: white;
+        }
+        button{
+            color: black;
+            background-color: brown;
+            margin-top: 70px;
+        }
+        /* div2 is used for showing products in a grid  */
+        .div2{
+            display: grid;
+            grid-template-columns: 550px 550px 550px 550px;
+          
+            background-color: rgb(11, 12, 11);
+            grid-gap: 32px;
+            width: 2300px;
+            height: 600px;
+            margin-top: 200px;
+
+        }
+        /* div4 is used for heading of animation */
+        .div4{                      
+            margin-top: 50pt;
+            height: 80px;
+            width: 700px;
+            background-color: violet;
+            position: relative;
+            animation:  simple 15s infinite;
+        }
+         @keyframes simple{
+             from {left: 0px;}
+             to {left: 1690px;}
+
+         }
+         .h2{
+             font-size: 60px;
+             font-family: fantasy;
+         }
+
+    </style>
+  
+  
+</head>
+<body>
+    <img src="{% static 'image/msi.png' %}">
+    
+    <div > 
+        
+        <ul>
+        
+    
+    <li ><a href="home">home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="products">products</a></li>
+            <li><a href="services">services</a></li>
+            <li><a href="contact us">contact us</a></li>
+            <li><a href="login">login</a></li>
+        </ul>
+        </div>
+        <hr> 
+        <div class="div4">
+            <h class="h2">NEW PRODUCTS AVALIABLE</h>
+    
+
+        </div>
+
+    <div class="div2">
+        <div class="h1" style="background-color: rgb(17, 17, 15);">
+            <h1>msi gaming s1</h1>
+            <a href="msi gaming s1"><img style="height: 400px; width: 400px; " src="{% static 'image/p1.png' %}"></a> <br>
+              
+        </div>
+        <div class="h1" style="background-color: rgb(10, 9, 9);">
+            <h2>msi gaming s2</h2>
+            <a href="msi gaming s2"><img style="height: 400px; width: 400px;" src="{% static 'image/p2.png' %}"></a> <br>
+            
+
+        </div>
+        <div class="h1" style="background-color: rgb(16, 15, 17);">
+            <h3>msi gaming s3</h3>
+            <a href="msi gaming s3"><img style="height: 400px; width: 400px;" src="{% static 'image/p3.png' %}"></a> <br>
+            
+
+       
+            
+        </div>
+        <div class="h1" style="background-color: rgb(10, 14, 11);">
+            <h5>msi gaming s5</h5>
+            <a href="msi gaming s5"><img style="height: 400px; width: 400px;" src="{% static 'image/p5.png' %}"></a> <br>
+            
+            
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

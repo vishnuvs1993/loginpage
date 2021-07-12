@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+            margin: 10px;
+            
+        }
+        hr{
+           height: 5px;
+           border: 2px solid brown;
+           border-radius: 10px;
+           background: linear-gradient(to left,red,blue);
+           margin-top: 100px;
+           
+
+
+        }
+        ul{
+            margin-left: 1200px;
+            font-size: 40px;
+            margin-top: -70px;
+            
+        }
+        a{
+            color: chocolate;
+            text-decoration: none;
+            
+        }
+        .cc{
+            margin-top: 30px;
+            margin-left: 0px;
+
+        }
+        .div1{
+            height: 1000px;
+            max-width: 100%;
+            background-color: cornflowerblue;
+            background-image:url("{% static 'image/h2.jpg' %}");
+        }
+        .div2{
+            display: grid;
+            grid-template-columns: 760px 760px 760px;
+            
+            grid-gap: 5px;
+            background-color: rgba(8, 1, 1, 0.993);
+            
+            
+            
+            
+            
+        }
+        img{
+            width: 750px;
+            height: 750px;
+        }
+        
+        p{
+            font-size: 30px;
+            color: rgb(250, 248, 246);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            
+        
+       
+
+    </style>
+    
+</head>
+<body>
+    
+    <img style="height: 100px; width: 100px;" src="{% static 'image/msi.png' %}">
+    
+    <div > 
+        
+        <ul>
+        
+    
+    <li class="li1" ><a href="home">home</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="products">products</a></li>
+            <li><a href="services">services</a></li>
+            <li><a href="contact us">contact us</a></li>
+            <li><a href="login">login</a></li>
+        </ul>
+        </div>
+        <hr> 
+    <div class="div1">
+
+        
+
+    </div>
+    <div class="div2">
+         <div>
+             <img src="{% static 'image/h3.jpg' %}">
+             <p>MEG-Z590-UNIFY</p>
+         </div>
+         <div>
+            <img src="{% static 'image/h4.jpg' %}">
+            <p>Graphics-Cards</p>
+         </div>
+         <div>
+            <img src="{% static 'image/h5.jpg' %}">
+            <p>Creator-Z16-A11UX</p>
+         </div>
+    </div>       
+</body>
+</html>
